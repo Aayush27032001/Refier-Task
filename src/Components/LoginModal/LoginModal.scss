@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap');
+
+.modal-background{
+    position:absolute;
+    top: 0;
+    background-color: rgba(189, 189, 189, 0.274);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container{
+        .modal-card{
+            width:310px;
+            background-color: white;
+            border-radius: 8px;
+            padding: 1rem 1rem;
+            .modal-card-title{
+                display: flex;
+                justify-content: space-between;
+                p{
+                    margin: 0px;
+                    font-family: 'Manrope', sans-serif;
+                    font-weight: bold;
+                    font-size: 26px;
+                }
+                button{
+                    background-color: white;
+                    border: none;
+                    cursor: pointer;
+                    i{
+                        color: rgb(128, 128, 128);
+                    }
+                }
+            }
+
+            .modal-google-login{
+                border: solid black thin;
+                border-radius: 8px;
+                padding: 10px;
+                font-weight: 600;
+                margin: 20px 0px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                svg{
+                    margin-right: 15px;
+                }
+            }
+
+            .dividor{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 20px;
+                color: rgba(0, 0, 0, 0.274);
+                div{
+                    width: 45%;
+                    height: 1px;
+                    background-color: rgba(0, 0, 0, 0.274);
+                }
+            }
+
+            .modal-bottom{
+                .form-submit-btn{
+                    width: 100%;
+                    padding: 12px;
+                    margin-bottom: 10px;
+                    font-size: 16px;
+                    background-color: black;
+                    color: white;
+                    font-weight: bold;
+                    border: none;
+                    border-radius: 5px;
+                    box-shadow: 10px 10px 30px rgb(0 0 0 / 25%);
+                }
+                .form-submit-btn:hover{
+                    background-color: grey;
+                    color: black;
+                }
+
+                p{
+                    font-size: 15px;
+                    font-weight: 500;
+                    color: #3a7b99;
+                }
+            }
+            .modal-signup{
+                text-align: center;
+                margin-top: 15px;
+                font-size: 14px;
+                font-weight: 500;
+                span{
+                    color: #3a7b99;
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+.sideform-bottom{
+    label{
+        display: block;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+    .form-email-input, .form-password-input{
+        margin-bottom: 20px;
+        label::after{
+            content: "*";
+            color: red;
+            padding-left: 2px;
+        }
+    }
+    
+    input{
+        position: relative;
+        width: 94%;
+        padding:10px;
+        border: solid rgba(128, 128, 128, 0.342) thin;
+        border-radius: 5px;
+    }
+    input:focus{
+        outline: solid #07879b75 0.5px;
+    }
+}

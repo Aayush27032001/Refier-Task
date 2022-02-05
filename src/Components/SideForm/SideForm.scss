@@ -1,0 +1,59 @@
+.sideform-container{
+    grid-area: 1 / 3 / 2 / 4;
+
+    .sideform{
+        padding: 1rem 1rem;
+        background-color: white;
+        border-radius: 8px;
+
+        .sideform-top{
+            h3{
+                color: #07889b;
+                margin: 0px 0px 20px 0px;
+                padding-bottom: 20px;
+                border-bottom: solid rgba(128, 128, 128, 0.212) 1px;
+            }
+        }
+
+        .sideform-bottom{
+            label{
+                display: block;
+                font-weight: 500;
+                margin-bottom: 5px;
+            }
+            .form-name-input, .form-email-input{
+                margin-bottom: 20px;
+                label::after{
+                    content: "*";
+                    color: red;
+                    padding-left: 2px;
+                }
+            }
+            
+            input{
+                position: relative;
+                width: 92%;
+                padding:10px;
+                border: solid rgba(128, 128, 128, 0.342) thin;
+                border-radius: 5px;
+            }
+            input:focus{
+                outline: solid #07879b75 0.5px;
+            }
+        }
+
+        .form-submit-btn{
+            width: 100%;
+            padding: 12px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 16px;
+            background-color: black;
+            color: white;
+            font-size: bold;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 10px 10px 30px rgb(0 0 0 / 25%);
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.navbar-container{
+    background-color: white;
+    height: 10vh;
+    width: 100%;
+    margin-bottom: 60px;
+
+    .container{
+        .navbar-holder{
+            height: 10vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .nav-logo{
+                img{
+                    max-width: 100%;
+                }
+            }
+            .nav-elements{
+                span{
+                    font-size: 18px ;
+                    border: solid black thin;
+                    border-radius: 5px;
+                    padding: 10px 20px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
